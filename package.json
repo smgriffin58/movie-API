@@ -1,0 +1,21 @@
+{
+  "name": "movie-API",
+  "version": "1.0.0",
+  "description": "A basic API that provides information about movies and ratings.",
+  "main": "server.js",
+  "scripts": {
+    "test": "node --test",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.3.0",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "supertest": "^7.3.1"
+  }
+}
