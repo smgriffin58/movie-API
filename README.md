@@ -26,6 +26,7 @@ Query Parameters:
     - order (ASC or DESC, defaults to ASC)
     - page (must be a positive integer, defaults to 1). The page size is 50
 Example Response:
+```json
 [
   {
     "imdbId": "tt0111161",
@@ -35,11 +36,13 @@ Example Response:
     "budget": "$25,000,000"
   }
 ]
+```
 
 GET /movies/:id
 This endpoint returns information about a given movie
 Path Parameters: movieId
 Example Response:
+```json
 {
     "imdbId": "tt0111161",
     "title": "The Shawshank Redemption",
@@ -48,3 +51,4 @@ Example Response:
     "budget": "$25,000,000",
     "averageRating": 3.3
 }
+```
