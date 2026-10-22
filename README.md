@@ -1,4 +1,4 @@
-## Movie API
+# Movie API
 
 Full disclosure, I did spend a little longer than 2 hours on this. I was enjoying it and wanted to keep working on it. The requirements were pretty clear for the most part. There were a few things that I think could have been interpreted differently, so if I wasn't 100% sure I described my thought process below. I did use chatGPT (and google) for some of the code and a good chunk of the tests.
 
@@ -9,7 +9,7 @@ Full disclosure, I did spend a little longer than 2 hours on this. I was enjoyin
 - If /movies/:id is called with a movie that does not exist, the API throws a 404. If a movie has no ratings, I returned the movie with an average rating of null. I could also see wanting to return an empty array here since there are no reviews. I definitely would do it that was if the endpoint was just supposed to return all reviews for a movie, but given that it is the average/movie details I'm not entirely sure
 
 
-## Running the API
+# Running the API
 To run the app
 - npm start
 
@@ -17,10 +17,10 @@ To run tests
 - npm start (API must be running for integration tests)
 - npm test (in another terminal)
 
-## API Endpoints
-GET /movies
-This endpoint returns a paginated list of movies that match certain critera.
-Query Parameters:
+# API Endpoints
+## GET /movies
+- This endpoint returns a paginated list of movies that match certain critera.
+- Query Parameters:
     - genre
     - releaseYear
     - order (ASC or DESC, defaults to ASC)
@@ -38,10 +38,10 @@ Example Response:
 ]
 ```
 
-GET /movies/:id
-This endpoint returns information about a given movie
-Path Parameters: movieId
-Example Response:
+## GET /movies/:id
+- This endpoint returns information about a given movie
+- Path Parameters: movieId
+- Example Response:
 ```json
 {
     "imdbId": "tt0111161",
